@@ -1,0 +1,115 @@
+@import "globals.css";
+
+
+/* Hero Section Styles */
+.heroDiv {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url(./public/hero.avif);
+  background-size: cover;
+  padding: 0 20px 0 20px;
+}
+.heroDiv h1 {
+  color: var(--white);
+  font-size: 3.5rem;
+}
+.heroDiv p {
+  color: var(--primary-color);
+  text-align: center;
+}
+/* History Section Styles */
+.historyDiv {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+  padding: 20px;
+}
+.historyDiv h1 {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+.historyDiv p {
+  margin-bottom: 15px;
+}
+/* Memory Section Styles */
+.membersDiv {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 5px;
+  padding: 20px;
+}
+.membersDiv h1 {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+.membersDiv p {
+  width: 60%;
+  margin-bottom: 15px;
+}
+/* News Section Styles */
+.newsDiv {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 5px;
+  padding: 20px;
+}
+.newsDiv h1 {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+.socialsDiv {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.emailDiv {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: start;
+  flex: 1;
+  width: 100%;
+}
+.emailDiv input {
+  background-color: var(--primary-color);
+  width: 60%;
+  border: solid 2px var(--white);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 5px;
+  flex: 6;
+}
+.emailDiv button {
+  flex: 1;
+}
+.socialsDiv img:hover {
+  box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+.socialsDiv img:active {
+  transform: scale(0.9);
+}
+.socialsDiv input:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 24px rgba(255, 255, 255, 0.5);
+}
