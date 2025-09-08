@@ -1,7 +1,7 @@
 const http = require("http");
 const path = require("path");
 const fs = require("fs");
-const { insertEmail } = require("./src/db/db.js");
+const { insertEmail } = require("./db/db.js");
 
 const server = http.createServer((req, res) => {
   const method = req.method;
