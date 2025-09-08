@@ -24,7 +24,7 @@
 }
 
 .card {
-  background-image: url("../../public/images/hero.png");
+  background-image: url("../images/hero.png");
   background-size: cover;
   border-radius: 10px;
   width: 100%;
