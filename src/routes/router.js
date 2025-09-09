@@ -18,15 +18,16 @@ const router = (req, res) => {
   const method = req.method;
   const url = req.url;
 
-  if (routes[method][url]) {
+  if (routes[method] && routes[method][url]) {
     return routes[method][url](req, res);
   }
 
   if (method === "GET" && routes.GET["*"]) {
-    return routes.GET["*"](req, res); 
+    return routes.GET["*"](req, res, url);
   }
 
   return notFoundController(req, res);
 };
+
 
 module.exports = router;
