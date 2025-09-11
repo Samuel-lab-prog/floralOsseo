@@ -1,67 +1,43 @@
 @import "globals.css";
 
-h1{
-  color: var(--primary-color);
-  font-size: 4rem;
+h1 {
+  font-size: 3rem;
   padding: 0 20px 0 20px;
 }
-.showsDiv {
-  height: fit-content;
-  width: 100%;
+  h2{
+    width: fit-content;
+  }
+
+.eventDiv {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-}
-.showContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.infoDiv {
-  display: flex;
-  flex-direction: column;
-}
-.mainInformationDiv,
-.secondInformationDiv {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  height: fit-content;
-}
-.mainInformationDiv h2,
-.mainInformationDiv p {
-  font-size: 2rem;
-}
-.secondInformationDiv h2,
-.secondInformationDiv p {
-  font-size: 1.2rem;
-}
-.buyDiv {
-  display: flex;
-  flex-direction: column;
+  padding: var(--padding);
   gap: 5px;
 }
-.buyDiv a {
-  color: var(--white);
-  text-decoration: none;
-  color: var(--secondary-color);
-  font-size: 1.5rem;
-  border: 2px solid var(--white);
-  padding: 10px;
+.mainInfo, .subInfo{
   width: 100%;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
-.buyDiv a:hover {
-  background-color: var(--primary-color);
-  cursor: pointer;
+.date, .time{
+  white-space: nowrap;
 }
-.buyDiv p {
-  font-size: 1.3rem;
+.buyDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
+.buyDiv p{
+  font-size: 1.2rem;
   color: var(--primary-color);
   font-weight: bold;
+  width: 100%;
+}
+.buyDiv a{
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.2rem;
 }

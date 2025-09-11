@@ -1,6 +1,5 @@
 @import "globals.css";
 
-
 /* Hero Section Styles */
 .heroDiv {
   height: 260px;
@@ -10,66 +9,25 @@
   justify-content: center;
   gap: 10px;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
-    url('../images/hero.png');
+    url("../images/hero.png");
   background-size: cover;
-  padding: 0 20px 0 20px;
+  padding: 0 var(--padding) 0 var(--padding);
 }
-.heroDiv h1 {
-  color: var(--white);
-  font-size: 3.5rem;
-}
-.heroDiv p {
-  color: var(--primary-color);
+.heroDiv h1, .heroDiv p {
   text-align: center;
 }
-/* History Section Styles */
-.historyDiv {
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 5px;
-  padding: 20px;
-}
-.historyDiv h1 {
-  color: var(--primary-color);
-  font-size: 3rem;
-}
-.historyDiv p {
-  margin-bottom: 15px;
-}
-/* Memory Section Styles */
-.membersDiv {
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  gap: 5px;
-  padding: 20px;
-}
-.membersDiv h1 {
-  color: var(--primary-color);
-  font-size: 3rem;
-}
-.membersDiv p {
-  width: 60%;
-  margin-bottom: 15px;
-}
-/* News Section Styles */
+
+/* History, Members, News Section Styles */
+.historyDiv,
+.membersDiv,
 .newsDiv {
   height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: start;
-  gap: 5px;
-  padding: 20px;
-}
-.newsDiv h1 {
-  color: var(--primary-color);
-  font-size: 3rem;
+  justify-content: center;
+  gap: 10px;
+  padding: var(--padding);
 }
 .socialsDiv {
   display: flex;
@@ -77,29 +35,23 @@
   gap: 30px;
   align-items: center;
   justify-content: start;
-  margin-bottom: 15px;
-  margin-top: 15px;
 }
 .emailDiv {
   display: flex;
-  gap: 5px;
   align-items: center;
   justify-content: start;
-  flex: 1;
   width: 100%;
+  gap: 10px;
 }
-.emailDiv input {
+.emailField {
   background-color: var(--primary-color);
-  width: 60%;
   border: solid 2px var(--white);
   color: var(--white);
   padding: 10px;
   border-radius: 5px;
-  flex: 6;
+  flex-basis: 250px;
 }
-.emailDiv button {
-  flex: 1;
-}
+
 .socialsDiv img:hover {
   box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.5);
   cursor: pointer;
