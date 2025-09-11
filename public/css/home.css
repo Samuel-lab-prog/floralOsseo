@@ -13,8 +13,7 @@
   background-size: cover;
   padding: 0 var(--padding) 0 var(--padding);
 }
-.heroDiv h1 {
-  font-size: 3rem;
+.heroDiv h1, .heroDiv p {
   text-align: center;
 }
 
