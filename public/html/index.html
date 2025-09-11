@@ -12,15 +12,23 @@
     <header>
       <nav>
         <div class="navDiv">
-          <a href="index.html"><img src="../icons/logo.svg" alt="logo" class="logoImg" /></a>
-          <button class="menuButton"><img src="../icons/menu.svg" alt="menu" class="menuImg" /></button>
+          <a href="index.html"
+            ><img src="../icons/logo.svg" alt="logo" class="logoImg"
+          /></a>
+          <button class="menuButton">
+            <img src="../icons/menu.svg" alt="menu" class="menuImg" />
+          </button>
         </div>
         <menu>
           <div class="menuDiv">
             <div class="menuSettings">
               <p>Menu</p>
               <button class="menuCloseButton">
-                <img src="../icons/close.svg" alt="Fechar menu" class="menuCloseImg" />
+                <img
+                  src="../icons/close.svg"
+                  alt="Fechar menu"
+                  class="menuCloseImg"
+                />
               </button>
             </div>
             <a href="index.html" class="menuLink">Home</a>
@@ -36,21 +44,27 @@
         <div class="heroDiv">
           <h1>Floral Ósseo</h1>
           <p><i>"E tudo morreu para que um jardim de ossos florescesse"</i></p>
-          <a class="button" href="shows.html">Ver shows</a>
+          <a class="button-primary" href="shows.html">Ver shows</a>
         </div>
       </section>
       <section>
         <div class="historyDiv">
           <h1>Quando tudo começou</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum quisquam nostrum repellendus amet temporibus</p>
-          <a class="button" href="history.html">Ver história</a>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+            quisquam nostrum repellendus amet temporibus
+          </p>
+          <a class="button-primary" href="history.html">Ver história</a>
         </div>
       </section>
       <section>
         <div class="membersDiv">
           <h1>As 6 flores</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae pariatur fuga sit aspernatur error </p>
-          <a class="button" href="members.html">Ver membros</a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+            pariatur fuga sit aspernatur error
+          </p>
+          <a class="button-primary" href="members.html">Ver membros</a>
         </div>
       </section>
       <section>
@@ -70,13 +84,24 @@
               <img src="../icons/twitter.svg" alt="Twitter" />
             </a>
           </div>
-          <p>Informe seu e-mail para receber notificações sobre shows e novas músicas!</p>
-          <div class="emailDiv">
-            <form action="/submit" method="POST">
-              <input type="text" placeholder="Digite seu e-mail" name="email" />
-              <input type="submit" class="button" value="Enviar" id="submitButton"/>
-            </form>
-          </div>
+          <p>
+            Informe seu e-mail para receber notificações sobre shows e novas
+            músicas!
+          </p>
+          <form action="/submit" method="POST" class="emailDiv">
+            <input
+              class="emailField"
+              type="text"
+              placeholder="Digite seu e-mail"
+              name="email"
+            />
+            <input
+              type="submit"
+              class="button-secondary"
+              value="Enviar"
+              id="submitButton"
+            />
+          </form>
         </div>
       </section>
     </main>
