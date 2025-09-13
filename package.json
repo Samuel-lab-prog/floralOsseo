@@ -24,10 +24,8 @@
     "nodemon": "^3.1.10"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.13",
     "dotenv": "^17.2.2",
     "pg": "^8.16.3",
-    "postgres": "^3.4.7",
-    "tailwindcss": "^4.1.13"
+    "postgres": "^3.4.7"
   }
 }
