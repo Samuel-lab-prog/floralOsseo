@@ -882,10 +882,11 @@ form input[type=email] {
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
+  gap: 2rem;
 }
 .bandHistorySection p {
   text-align: justify;
+  width: 100%;
 }
 .bandHistorySection img {
   width: 100%;

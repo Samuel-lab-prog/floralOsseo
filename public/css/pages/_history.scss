@@ -7,11 +7,12 @@
   padding: map.get(var.$body-padding-sizes, "xsm");
   p {
     text-align: justify;
+    width: 100%;
   }
   img {
     width: 100%;
   }
-  @include mixins.grid(1, 1rem);
+  @include mixins.grid(1, 2rem);
   @include mixins.respond-to("xl") {
     @include mixins.grid(2, 1rem);
   }
