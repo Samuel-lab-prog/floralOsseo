@@ -18,10 +18,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd src && node server.js",
     "dev": "cd src && nodemon server.js",
-    "build": "npx @tailwindcss/cli -i ./public/css/styles.css -o ./public/css/tailwind.css --watch"
+    "lint": "stylelint \"./public/css/**/*.scss\"",
+    "lint:fix": "stylelint \"./public/css/**/*.scss\" --fix"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "stylelint": "^16.24.0",
+    "stylelint-config-standard": "^39.0.0",
+    "stylelint-config-standard-scss": "^16.0.0",
+    "stylelint-scss": "^6.12.1"
   },
   "dependencies": {
     "dotenv": "^17.2.2",

@@ -5,39 +5,48 @@
 
 .membersTitleSection {
   @include mixins.flex(column, center, center, 0);
+
   h1,
   p {
     text-align: center;
     width: fit-content;
   }
 }
+
 .membersCardsSection {
   justify-content: center;
+
   @include mixins.grid(2, 2rem);
+
   @include mixins.respond-to("lg") {
     @include mixins.grid(3, 3rem);
   }
+
   @each $label, $size in var.$breakpoints {
     @include mixins.respond-to($label) {
       padding: map.get(var.$body-padding-sizes, $label);
     }
   }
+
   .memberCard {
     background-image: url("../images/hero.png");
     background-size: cover;
     background-position: center;
     aspect-ratio: 3/4;
+
     @include mixins.flex(column, end, center, 1rem);
 
     .memberName {
       color: map.get(var.$colors, "white");
       margin-bottom: 1rem;
     }
+
     &:hover {
       cursor: pointer;
       transform: scale(1.05);
       box-shadow: var.$box-shadow;
       transition: var.$transition-medium;
+
       .memberName {
         color: map.get(var.$colors, "primary");
         transition: var.$transition-medium;

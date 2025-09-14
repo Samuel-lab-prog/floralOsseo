@@ -9,6 +9,7 @@ body {
   font-family: var.$font-body;
   width: 100%;
 }
+
 h1,
 h2,
 h3,
@@ -29,6 +30,7 @@ label {
   font-family: var.$font-body;
   line-height: 1.6;
 }
+
 ul{
     list-style: none;
 }
@@ -39,11 +41,14 @@ a {
   color: map.get(var.$colors, "white");
 
 }
+
 main {
   margin-top: var.$navbar-height;
 }
+
 footer {
   @include mixins.flex(row, center, center, 1rem);
+
   height: calc(var.$navbar-height * 2);
 }
 
@@ -52,21 +57,27 @@ footer {
     h1 {
       font-size: map.get($map, "h1");
     }
+
     h2 {
       font-size: map.get($map, "h2");
     }
+
     h3 {
       font-size: map.get($map, "h3");
     }
+
     h4 {
       font-size: map.get($map, "h4");
     }
+
     h5 {
       font-size: map.get($map, "h5");
     }
+
     h6 {
       font-size: map.get($map, "h6");
     }
+
     p,
     i,
     span,
