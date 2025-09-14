@@ -3,7 +3,8 @@
 @use "../components/buttons" as buttons;
 @use "sass:map";
 
-.title {
+.titleShow {
+  text-align: center;
   padding: map.get(var.$body-padding-sizes, "xsm");
   @each $label, $size in var.$breakpoints {
     @include mixins.respond-to($label) {
@@ -25,7 +26,7 @@
   padding-bottom: 1rem;
   @include mixins.flex(column, center, start, 0);
   .showHeader {
-    @include mixins.flex(row, space-between, center, 1rem);
+    @include mixins.flex(row, space-between, start, 1rem);
     width: 100%;
     .city {
       color: map.get(var.$colors, "white");
@@ -37,13 +38,14 @@
     }
   }
   .showDetails {
-    @include mixins.flex(row, space-between, center, 1rem);
+    @include mixins.flex(row, space-between, start, 1rem);
     width: 100%;
     .location {
       flex: 1;
     }
     .time {
       white-space: nowrap;
+      width: fit-content;
     }
   }
   .showAvailability {
@@ -51,6 +53,7 @@
     width: 100%;
     p {
       color: map.get(var.$colors, "primary");
+      width: fit-content;
     }
     a {
       width: 100%;

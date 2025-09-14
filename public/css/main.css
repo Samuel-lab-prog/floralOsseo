@@ -588,31 +588,32 @@ form input[type=email] {
   width: 60%;
 }
 
-.title {
+.titleShow {
+  text-align: center;
   padding: 1rem;
 }
 @media (min-width: 350px) {
-  .title {
+  .titleShow {
     padding: 1rem;
   }
 }
 @media (min-width: 480px) {
-  .title {
+  .titleShow {
     padding: 1.5rem;
   }
 }
 @media (min-width: 768px) {
-  .title {
+  .titleShow {
     padding: 3rem;
   }
 }
 @media (min-width: 1024px) {
-  .title {
+  .titleShow {
     padding: 3rem;
   }
 }
 @media (min-width: 1200px) {
-  .title {
+  .titleShow {
     padding: 4rem;
   }
 }
@@ -664,7 +665,7 @@ form input[type=email] {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 1rem;
   width: 100%;
 }
@@ -680,7 +681,7 @@ form input[type=email] {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 1rem;
   width: 100%;
 }
@@ -689,6 +690,8 @@ form input[type=email] {
 }
 .showCard .showDetails .time {
   white-space: nowrap;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .showCard .showAvailability {
   display: flex;
@@ -700,6 +703,8 @@ form input[type=email] {
 }
 .showCard .showAvailability p {
   color: #d20000;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .showCard .showAvailability a {
   width: 100%;
