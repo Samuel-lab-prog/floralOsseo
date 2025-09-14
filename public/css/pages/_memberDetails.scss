@@ -16,17 +16,23 @@
 }
 .memberInfoSection {
   @include mixins.flex(column, start, start, 2rem);
-  margin-top: 2rem;
   @each $label, $size in var.$breakpoints {
     @include mixins.respond-to($label) {
-      padding: map.get(var.$body-padding-sizes, $label);
+      padding: 0 map.get(var.$body-padding-sizes, $label);
     }
   }
   p {
     line-height: 1.6;
     text-align: justify;
     @include mixins.respond-to("lg") {
-        max-width: 70%;
+      max-width: 70%;
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    @include mixins.respond-to("lg") {
+      max-width: 70%;
     }
   }
 }
