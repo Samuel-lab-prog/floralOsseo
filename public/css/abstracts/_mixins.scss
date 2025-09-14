@@ -15,8 +15,10 @@
     gap: $gap;
     
 }
+
 @mixin respond-to($breakpoint) {
     $size: map.get(var.$breakpoints, $breakpoint);
+
     @if $size {
         @media (min-width: $size) {
             @content;

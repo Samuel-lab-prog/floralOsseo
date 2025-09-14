@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bungee&family=Comic+Relief:wght@400;700&family=Corinthia:wght@400;700&family=Londrina+Outline&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bungee&family=Comic+Relief:wght@400;700&family=Corinthia:wght@400;700&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Londrina+Outline&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bungee&family=Comic+Relief:wght@400;700&family=Corinthia:wght@400;700&family=Londrina+Outline&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bungee&family=Comic+Relief:wght@400;700&family=Corinthia:wght@400;700&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Londrina+Outline&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap";
 
 $breakpoints: (
   "xsm": 350px,
@@ -9,7 +8,6 @@ $breakpoints: (
   "lg": 1024px,
   "xl": 1200px,
 );
-
 $font-sizes-xsm: (
   "p": 1rem,
   "h6": 1.2rem,
@@ -69,20 +67,16 @@ $body-padding-sizes: (
   "lg": 3rem,
   "xl": 4rem,
 );
-
 $colors: (
   "primary": #d20000,
-  "secondary": #ffffff,
-  "white": #ffffff,
-  "black": #000000,
+  "secondary": #fff,
+  "white": #fff,
+  "black": #000,
 );
 $font-heading: "Bungee";
 $font-body: "Epunda Slab", serif;
-
 $transition-fast: 0.2s ease;
 $transition-medium: 0.4s ease;
 $transition-slow: 0.6s ease;
-
-$box-shadow: 0 0px 20px rgba(255, 255, 255, 0.6);
-
+$box-shadow: 0 0px 20px rgb(255 255 255 / 60%);
 $navbar-height: 100px;

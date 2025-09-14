@@ -5,7 +5,8 @@
 
 .heroSection {
   @include mixins.flex(column, center, center, 1rem);
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+
+  background: linear-gradient(rgb(0 0 0 / 90%), rgb(0 0 0 / 60%)),
     url("../images/hero.png");
   background-size: cover;
   background-position: center;
@@ -14,21 +15,28 @@
   h1 {
     text-align: center;
   }
+
   p {
     text-align: center;
   }
+
   padding: map.get(var.$body-padding-sizes, "xsm");
 }
+
 section{
   @include mixins.flex(column, center, start, 1rem);
+
   padding: map.get(var.$body-padding-sizes, "xsm");
+
   @each $label, $size in var.$breakpoints {
     @include mixins.respond-to($label) {
       padding: map.get(var.$body-padding-sizes, $label);
     }
   }
+
   p {
     text-align: justify;
+
     @include mixins.respond-to(lg) {
       width: 80%;
     }
@@ -37,49 +45,63 @@ section{
 
 .membersSection {
   @include mixins.respond-to(lg) {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 80%)),
       url("../images/membersHome.avif");
     background-size: cover;
     background-attachment: fixed;
   }
 }
+
 .contactSection {
   @include mixins.flex(column, center, center, 1rem);
+
   p, h2{
     text-align: center;
   }
 }
+
 ul {
   @include mixins.flex(row, space-around, center, 0);
+
   list-style: none;
   width: 100%;
 }
+
 .hide {
   display: none;
 }
+
 .contactImage {
   width: 50px;
   transition: var.$transition-fast;
+
   &:hover {
     filter: brightness(0.8);
     transform: scale(1.1);
   }
+
   @include mixins.respond-to(sm) {
     width: 60px;
   }
+
   @include mixins.respond-to(md) {
     width: 90px;
   }
+
   @include mixins.respond-to(lg) {
     width: 110px;
   }
+
   @include mixins.respond-to(xl) {
     width: 130px;
   }
 }
+
 form {
   @include mixins.flex(row, center, center, 1rem);
+
   width: 100%;
+
   input[type='email'] {
     width: 60%;
   }
