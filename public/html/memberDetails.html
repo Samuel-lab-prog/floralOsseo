@@ -1,69 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Membro</title>
-  <link rel="stylesheet" href="../css/memberDetails.css" />
-  <link rel="icon" href="../icons/logo.svg" />
-  <script src="../js/script.js" defer></script>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="navDiv">
-        <a href="./index.html"><img src="../icons/logo.svg" alt="logo" class="logoImg" /></a>
-        <button class="menuButton"><img src="../icons/menu.svg" alt="menu" class="menuImg" /></button>
-      </div>
-      <menu>
-        <div class="menuDiv">
-          <div class="menuSettings">
-            <p>Menu</p>
-            <button class="menuCloseButton">
-              <img src="../icons/close.svg" alt="Fechar menu" class="menuCloseImg" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styles</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="home.html" class="navLogo"
+          ><img src="../icons/logo.svg" alt="logo"
+        /></a>
+        <ul class="navLinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="history.html">História</a></li>
+          <li><a href="members.html">Membros</a></li>
+        </ul>
+        <button class="button container menuButton" id="openMenu">
+          <img src="../icons/menu.svg" alt="Sign Up" />
+        </button>
+      </nav>
+      <menu class="menu">
+        <ul class="menuHeader">
+          <li>
+            <h3>Menu</h3>
+          </li>
+          <li>
+            <button class="button container" id="closeMenu">
+              <img src="../icons/close.svg" alt="Close Menu" />
             </button>
-          </div>
-          <a href="index.html" class="menuLink">Home</a>
-          <a href="shows.html" class="menuLink">Shows</a>
-          <a href="history.html" class="menuLink">História</a>
-          <a href="members.html" class="menuLink">Membros</a>
-        </div>
+          </li>
+        </ul>
+        <ul class="menuLinks">
+          <li><a href="">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="history.html">História</a></li>
+          <li><a href="members.html">Membros</a></li>
+        </ul>
       </menu>
-    </nav>
-  </header>
-  <main>
-    <div class="memberContainer">
-      <h1>Flávia</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-        aliquid perspiciatis eum explicabo, impedit sit suscipit. Recusandae
-        eius eum laboriosam. Similique numquam vero odio ipsa? Laboriosam
-        atque nam consequatur facilis!
-      </p>
+    </header>
+    <main>
+      <section class="memberTitleSection">
+        <h1>Flávia</h1>
+        <h3>Vocalista</h3>
+      </section>
 
-      <div class="imageContainer">
-        <img src="../images/hero.png" alt="história" class="historyImage" />
-        <p><i>Lorem ipsum dolor sit amet.</i></p>
-      </div>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-        expedita molestiae dolores, ratione a sed assumenda odit tenetur quasi
-        voluptate illum et libero officiis deleniti eaque eveniet aut iusto
-        veritatis.
-      </p>
-      <div class="socialsDiv">
-        <a href="https://www.instagram.com" class="linkImage">
-          <img src="../icons/instagram.svg" alt="Instagram" />
-        </a>
-        <a href="https://www.twitter.com" class="linkImage">
-          <img src="../icons/twitter.svg" alt="Twitter" />
-        </a>
-      </div>
-    </div>
-  </main>
-  <a href="index.html" class="backButton">Voltar</a>
-</body>
-
+      <section class="memberInfoSection">
+        <img src="../images/hero.png" alt="Flávia" class="memberPhoto" />
+        <p>
+          Flávia é a vocalista da banda, conhecida por sua poderosa presença de
+          palco e habilidades vocais impressionantes. Ela se juntou à banda em
+          2010 e desde então tem sido uma força criativa por trás de muitas das
+          músicas da banda.
+        </p>
+        <p>
+          Além de cantar, Flávia também é compositora e tem contribuído
+          significativamente para o repertório da banda. Sua paixão pela música
+          e dedicação ao ofício são evidentes em cada performance que ela faz.
+        </p>
+        <p>
+          Fora da música, Flávia é uma defensora ativa de várias causas sociais
+          e ambientais. Ela usa sua plataforma para promover a conscientização
+          sobre questões importantes e inspirar mudanças positivas na
+          comunidade.
+        </p>
+        <p>
+          Com sua combinação de talento, carisma e compromisso com a justiça
+          social, Flávia é uma figura admirada tanto dentro quanto fora do mundo
+          da música.
+        </p>
+        <img src="../images/hero.png" alt="Flávia" class="memberPhoto" />
+      </section>
+    </main>
+  </body>
 </html>

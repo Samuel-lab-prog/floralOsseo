@@ -1,0 +1,58 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as var;
+@use "../components/buttons" as buttons;
+@use "sass:map";
+
+.heroSection {
+  @include mixins.flex(column, center, center, 1rem);
+  background-image: url("../../images/hero.png");
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  padding: map.get(var.$body-padding-sizes, "xsm");
+}
+.historySection,
+.membersSection,
+.contactSection {
+  @include mixins.flex(column, center, start, 1rem);
+  padding: map.get(var.$body-padding-sizes, "xsm");
+  @each $label, $size in var.$breakpoints {
+    @include mixins.respond-to($label) {
+      padding: map.get(var.$body-padding-sizes, $label);
+    }
+  }
+}
+ul {
+  @include mixins.flex(row, space-around, center, 0);
+  list-style: none;
+  width: 100%;
+}
+.hide {
+  display: none;
+}
+.contactImage {
+  width: 50px;
+  transition: var.$transition-fast;
+  &:hover {
+    filter: brightness(0.8);
+    transform: scale(1.1);
+  }
+  @include mixins.respond-to(sm) {
+    width: 60px;
+  }
+  @include mixins.respond-to(md) {
+    width: 90px;
+  }
+  @include mixins.respond-to(lg) {
+    width: 110px;
+  }
+  @include mixins.respond-to(xl) {
+    width: 130px;
+  }
+}
+form {
+  @include mixins.flex(row, start, center, 1rem);
+}

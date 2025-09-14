@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Members</title>
-  <link rel="stylesheet" href="../css/members.css" />
-  <link rel="icon" href="../icons/logo.svg" />
-  <script src="../js/script.js" defer></script>
-
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="navDiv">
-        <a href="./index.html"><img src="../icons/logo.svg" alt="logo" class="logoImg" /></a>
-        <button class="menuButton"><img src="../icons/menu.svg" alt="menu" class="menuImg" /></button>
-      </div>
-      <menu>
-        <div class="menuDiv">
-          <div class="menuSettings">
-            <p>Menu</p>
-            <button class="menuCloseButton">
-              <img src="../icons/close.svg" alt="Fechar menu" class="menuCloseImg" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styles</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="home.html" class="navLogo"
+          ><img src="../icons/logo.svg" alt="logo"
+        /></a>
+        <ul class="navLinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="history.html">História</a></li>
+          <li><a href="members.html">Membros</a></li>
+        </ul>
+        <button class="button container menuButton" id="openMenu">
+          <img src="../icons/menu.svg" alt="Sign Up" />
+        </button>
+      </nav>
+      <menu class="menu">
+        <ul class="menuHeader">
+          <li>
+            <h3>Menu</h3>
+          </li>
+          <li>
+            <button class="button container" id="closeMenu">
+              <img src="../icons/close.svg" alt="Close Menu" />
             </button>
-          </div>
-          <a href="index.html" class="menuLink">Home</a>
-          <a href="shows.html" class="menuLink">Shows</a>
-          <a href="history.html" class="menuLink">História</a>
-          <a href="members.html" class="menuLink">Membros</a>
-        </div>
+          </li>
+        </ul>
+        <ul class="menuLinks">
+          <li><a href="">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="history.html">História</a></li>
+          <li><a href="members.html">Membros</a></li>
+        </ul>
       </menu>
-    </nav>
-  </header>
-  <main>
-    <div class="title">
-      <h1>Membros</h1>
-      <p>Conheça os membros da banda</p>
-    </div>
-    <div class="membersDiv">
-      <a class="card" href="memberDetails.html">
-        <h1>Flávia</h1>
+    </header>
+    <main>
+      <section class="membersTitleSection">
+        <h1>Membros</h1>
+        <p>Conheça os membros da banda</p>
+      </section>
+    </main>
+    <section class="membersCardsSection">
+      <a class="memberCard" href="memberDetails.html">
+        <h3 class="memberName">Líbano</h3>
       </a>
-      <a class="card" href="memberDetails.html">
-        <h1>Gus</h1>
+      <a class="memberCard" href="memberDetails.html">
+        <h3 class="memberName">Líbano</h3>
       </a>
-      <a class="card" href="memberDetails.html">
-        <h1>Paulin</h1>
+      <a class="memberCard" href="memberDetails.html">
+        <h3 class="memberName">Líbano</h3>
       </a>
-      <a class="card" href="memberDetails.html">
-        <h1>Richard</h1>
+      <a class="memberCard" href="memberDetails.html">
+        <h3 class="memberName">Líbano</h3>
       </a>
-      <a class="card" href="memberDetails.html">
-        <h1>Líbano</h1>
+      <a class="memberCard" href="memberDetails.html">
+        <h3 class="memberName">Líbano</h3>
       </a>
-      <a class="card" href="memberDetails.html">
-        <h1>Samuel</h1>
+      <a class="memberCard" href="memberDetails.html">
+        <h3 class="memberName">Líbano</h3>
       </a>
-    </div>
-  </main>
-  <a href="index.html" class="backButton">Voltar</a>
-</body>
-
+    </section>
+  </body>
 </html>

@@ -10,6 +10,9 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
+  border-bottom: 2px solid map.get(var.$colors, "white");
+  background-color: map.get(var.$colors, "black");
   @include mixins.respond-to(md) {
     justify-content: start;
   }
@@ -18,37 +21,25 @@
       padding: 0 map.get(var.$body-padding-sizes, $label);
     }
   }
-  &.navScroll {
-    background-color: map.get(var.$colors, "black");
-    transition: background-color var.$transition-fast;
-  }
 
-  a {
-    height: 100%;
+  .navLogo {
+    height: var.$navbar-height;
+    width: fit-content;
+    @include mixins.flex(row, center, center, 1rem);
     img {
-      height: 100%;
+      height: 90%;
       width: auto;
-      object-fit: contain;
     }
   }
-  ul {
+  ul.navLinks {
+    max-width: 600px;
     display: none;
     @include mixins.respond-to(md) {
-      @include mixins.flex(row, space-between, center, auto);
-    }
-
-    li {
-      padding: 0 2rem;
-      a {
-        text-decoration: none;
-        transition: var.$transition-fast;
-        &:hover {
-          color: map.get(var.$colors, "primary");
-        }
-      }
+      @include mixins.flex(row, space-between, center, 3rem);
     }
   }
-  button {
+
+  .menuButton {
     @include mixins.respond-to(md) {
       display: none;
     }

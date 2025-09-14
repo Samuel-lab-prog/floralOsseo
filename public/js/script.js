@@ -4,11 +4,11 @@ const menu = document.querySelector('.menu');
 const openMenu = document.getElementById('openMenu');
 const closeMenu = document.getElementById('closeMenu');
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 150) {
-    nav.classList.add('navScroll');
-  } else {
-    nav.classList.remove('navScroll');
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    if (menu.classList.contains('open')) {
+      menu.classList.remove('open');
+    }
   }
 });
 

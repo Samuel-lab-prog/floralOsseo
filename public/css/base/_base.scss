@@ -38,9 +38,6 @@ a {
   transition: var.$transition-fast;
   color: map.get(var.$colors, "white");
 
-  &:hover {
-    color: map.get(var.$colors, "primary");
-  }
 }
 main {
   margin-top: var.$navbar-height;
@@ -80,10 +77,4 @@ footer {
     }
   }
 }
-@each $breakpoint, $size in var.$breakpoints {
-  @media (min-width: $size) {
-    body {
-      padding: 0 map.get(var.$body-padding-sizes, $breakpoint);
-    }
-  }
-}
+

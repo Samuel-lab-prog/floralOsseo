@@ -1,0 +1,60 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as var;
+@use "../components/buttons" as buttons;
+@use "sass:map";
+
+.title {
+  padding: map.get(var.$body-padding-sizes, "xsm");
+  @each $label, $size in var.$breakpoints {
+    @include mixins.respond-to($label) {
+      padding: map.get(var.$body-padding-sizes, $label);
+    }
+  }
+}
+.showsSection {
+  @include mixins.flex(column, center, start, 1rem);
+  padding: map.get(var.$body-padding-sizes, "xsm");
+  @each $label, $size in var.$breakpoints {
+    @include mixins.respond-to($label) {
+      padding: 0 map.get(var.$body-padding-sizes, $label);
+    }
+  }
+}
+.showCard {
+  width: 100%;
+  padding-bottom: 1rem;
+  @include mixins.flex(column, center, start, 0);
+  .showHeader {
+    @include mixins.flex(row, space-between, center, 1rem);
+    width: 100%;
+    .city {
+      color: map.get(var.$colors, "white");
+      flex: 1;
+    }
+    .date {
+      color: map.get(var.$colors, "white");
+      white-space: nowrap;
+    }
+  }
+  .showDetails {
+    @include mixins.flex(row, space-between, center, 1rem);
+    width: 100%;
+    .location {
+      flex: 1;
+    }
+    .time {
+      white-space: nowrap;
+    }
+  }
+  .showAvailability {
+    @include mixins.flex(column, start, start, 0.5rem);
+    width: 100%;
+    p {
+      color: map.get(var.$colors, "primary");
+    }
+    a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

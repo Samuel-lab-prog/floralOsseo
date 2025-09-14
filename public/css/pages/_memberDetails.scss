@@ -1,0 +1,32 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as var;
+@use "../components/buttons" as buttons;
+@use "sass:map";
+
+.memberTitleSection {
+  h3 {
+    color: map.get(var.$colors, "white");
+  }
+  @include mixins.flex(column, start, start, 0);
+  @each $label, $size in var.$breakpoints {
+    @include mixins.respond-to($label) {
+      padding: map.get(var.$body-padding-sizes, $label);
+    }
+  }
+}
+.memberInfoSection {
+  @include mixins.flex(column, start, start, 2rem);
+  margin-top: 2rem;
+  @each $label, $size in var.$breakpoints {
+    @include mixins.respond-to($label) {
+      padding: map.get(var.$body-padding-sizes, $label);
+    }
+  }
+  p {
+    line-height: 1.6;
+    text-align: justify;
+    @include mixins.respond-to("lg") {
+        max-width: 70%;
+    }
+  }
+}

@@ -14,6 +14,18 @@ input {
   @each $label, $size in var.$breakpoints {
     @include mixin.respond-to($label) {
       font-size: map.get(var.$font-sizes, $label, "p");
+      @if $label == "sm" {
+        padding: 0.8rem 1.5rem;
+      }
+      @if $label == "md" {
+        padding: 1rem 2rem;
+      }
+      @if $label == "lg" {
+        padding: 1.2rem 2.5rem;
+      }
+      @if $label == "xl" {
+        padding: 1.5rem 3rem;
+      }
     }
   }
   &:focus {
@@ -24,4 +36,3 @@ input {
     color: map.get(var.$colors, "gray-light");
   }
 }
-

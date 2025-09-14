@@ -1,0 +1,47 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as var;
+@use "../components/buttons" as buttons;
+@use "sass:map";
+
+.membersTitleSection {
+  @include mixins.flex(column, center, center, 0);
+  text-align: center;
+}
+.membersCardsSection {
+  @include mixins.grid(2, 2rem);
+  @include mixins.respond-to("lg"){
+    @include mixins.grid(3, 6rem);
+  }
+  @each $label, $size in var.$breakpoints {
+    @include mixins.respond-to($label) {
+        padding: map.get(var.$body-padding-sizes, $label);
+    }
+  }
+  .memberCard {
+      height: 300px;
+      background-image: url("../../images/hero.png");
+      background-size: cover;
+      background-position: center;
+      @include mixins.flex(column, end, center, 1rem);
+      @include mixins.respond-to("md"){
+        height: 500px;
+      }
+      @include mixins.respond-to("lg"){
+        height: 550px;
+      }
+      @include mixins.respond-to("xl"){
+        height: 600px;
+      }
+    .memberName {
+      color: map.get(var.$colors, "white");
+      margin-bottom: 1rem;
+    }
+    &:hover {
+        cursor: pointer;
+      .memberName {
+        color: map.get(var.$colors, "primary");
+        transition: var.$transition-fast;
+      }
+    }
+  }
+}

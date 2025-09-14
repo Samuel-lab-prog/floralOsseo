@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Styles</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <script src="../js/script.js" defer></script>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <a href="#"><img src="../icons/logo.svg" alt="MyLogo" /></a>
-        <ul class="hideLinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+        <a href="home.html" class="navLogo"><img src="../icons/logo.svg" alt="logo" /></a>
+        <ul class="navLinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="history.html">História</a></li>
+          <li><a href="members.html">Membros</a></li>
         </ul>
-        <button class="button container" id="openMenu">
+        <button class="button container menuButton" id="openMenu">
           <img src="../icons/menu.svg" alt="Sign Up" />
         </button>
       </nav>
@@ -33,44 +33,43 @@
           </li>
         </ul>
         <ul class="menuLinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="history.html">História</a></li>
+          <li><a href="members.html">Membros</a></li>
         </ul>
       </menu>
     </header>
     <main>
       <section class="heroSection">
-        <h1>Welcome to Our Website</h1>
-        <p>Your success is our commitment. Let's grow together!</p>
-        <button class="button primary">Get Started</button>
+        <h1>Floral Ósseo</h1>
+        <p><i>"E tudo morreu para que um jardim de ossos florescesse"</i></p>
+        <a class="button secondary" href="shows.html">Ver Shows</a>
       </section>
       <section class="historySection">
-        <h1>Our History</h1>
+        <h2>Nossa História</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
           scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis
           consectetur.
         </p>
-        <button class="button primary">Learn More</button>
+        <button class="button primary">Ler Mais</button>
       </section>
       <section class="membersSection">
-        <h1>Our Team Members</h1>
+        <h2>As 6 flores</h2>
         <p>
-          Meet our dedicated team members who work tirelessly to bring you the
-          best service possible.
+          Conheça nossos dedicados membros da equipe que trabalham incansavelmente para oferecer a melhor experiência possível.
         </p>
-        <button class="button primary">Meet the Team</button>
+        <button class="button primary">Conheça a Equipe</button>
       </section>
       <section class="contactSection">
-        <h1>Contact Us</h1>
-        <p>Feel free to reach out to us through any of the channels below.</p>
+        <h2>Acompanhe a floral ósseo</h2>
+        <p>Sinta-se à vontade para entrar em contato conosco através de qualquer um dos canais abaixo.</p>
         <ul>
           <li>
             <a href=""
               ><img
-                src="../icons/facebook.svg"
+                src="../icons/instagram.svg"
                 alt="Contact Image"
                 class="contactImage"
             /></a>
@@ -78,7 +77,7 @@
           <li>
             <a href=""
               ><img
-                src="../icons/facebook.svg"
+                src="../icons/twitter.svg"
                 alt="Contact Image"
                 class="contactImage"
             /></a>
@@ -86,7 +85,7 @@
           <li>
             <a href=""
               ><img
-                src="../icons/facebook.svg"
+                src="../icons/youtube.svg"
                 alt="Contact Image"
                 class="contactImage"
             /></a>
@@ -100,21 +99,21 @@
             /></a>
           </li>
         </ul>
-        <p>We'd love to hear from you!</p>
+        <p>Informe seu e-mail para receber novidades:</p>
         <form action="submit" method="post">
           <input
             type="email"
             name="email"
             id="email"
-            placeholder="Enter your email"
+            placeholder="Digite seu e-mail"
             required
           />
-          <button type="submit" class="button primary">Send Message</button>
+          <button type="submit" class="button primary">Confirmar</button>
         </form>
       </section>
     </main>
     <footer>
-      <p>&copy; 2023 MyWebsite. All rights reserved.</p>
+      <p>&copy; 2025 Samuel Gomes Todos os direitos reservados.</p>
     </footer>
     </footer>
   </body>

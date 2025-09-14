@@ -3,95 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>História</title>
-    <link rel="stylesheet" href="../css/history.css" />
-    <link rel="icon" href="../icons/logo.svg" />
+    <title>Styles</title>
+    <link rel="stylesheet" href="../css/main.css" />
     <script src="../js/script.js" defer></script>
   </head>
   <body>
-     <header>
-      <nav>
-        <div class="navDiv">
-          <a href="./index.html"><img src="../icons/logo.svg" alt="logo" class="logoImg" /></a>
-          <button class="menuButton"><img src="../icons/menu.svg" alt="menu" class="menuImg" /></button>
-        </div>
-        <menu>
-          <div class="menuDiv">
-            <div class="menuSettings">
-              <p>Menu</p>
-              <button class="menuCloseButton">
-                <img src="../icons/close.svg" alt="Fechar menu" class="menuCloseImg" />
-              </button>
-            </div>
-            <a href="index.html" class="menuLink">Home</a>
-            <a href="shows.html" class="menuLink">Shows</a>
-            <a href="history.html" class="menuLink">História</a>
-            <a href="members.html" class="menuLink">Membros</a>
-          </div>
-        </menu>
+    <header>
+      <nav class="navbar">
+        <a href="home.html" class="navLogo"
+          ><img src="../icons/logo.svg" alt="logo"
+        /></a>
+        <ul class="navLinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="history.html">História</a></li>
+          <li><a href="members.html">Membros</a></li>
+        </ul>
+        <button class="button container menuButton" id="openMenu">
+          <img src="../icons/menu.svg" alt="Sign Up" />
+        </button>
       </nav>
+      <menu class="menu">
+        <ul class="menuHeader">
+          <li>
+            <h3>Menu</h3>
+          </li>
+          <li>
+            <button class="button container" id="closeMenu">
+              <img src="../icons/close.svg" alt="Close Menu" />
+            </button>
+          </li>
+        </ul>
+        <ul class="menuLinks">
+          <li><a href="">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="history.html">História</a></li>
+          <li><a href="members.html">Membros</a></li>
+        </ul>
+      </menu>
     </header>
     <main>
-      <section>
-        <div class="historyContainer">
-          <div class="topic">
-            <h1>A História da Floral Ósseo</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus quidem illum rerum eligendi assumenda dicta
-              consectetur provident, quos molestias, porro fugit consequuntur
-              quasi, pariatur quam! Eaque atque eius blanditiis ipsa!
-              Necessitatibus, vel hic. Totam, facere quisquam ea quibusdam esse
-              fugiat sint qui. Dolore fuga natus facilis nesciunt, magnam beatae
-              itaque dignissimos expedita illo earum numquam. Officia laboriosam
-              sunt magni voluptatum.
-            </p>
-            <div class="imageContainer">
-              <img
-                src="../images/hero.png"
-                alt="história"
-                class="historyImage"
-              />
-              <p><i>Lorem ipsum dolor sit amet.</i></p>
-            </div>
-          </div>
-          <div class="topic">
-            <h1>A História da Floral Ósseo</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus quidem illum rerum eligendi assumenda dicta
-              consectetur provident, quos molestias, porro fugit consequuntur
-              quasi, pariatur quam! Eaque atque eius blanditiis ipsa!
-              Necessitatibus, vel hic. Totam, facere quisquam ea quibusdam esse
-              fugiat sint qui. Dolore fuga natus facilis nesciunt, magnam beatae
-              itaque dignissimos expedita illo earum numquam. Officia laboriosam
-              sunt magni voluptatum.
-            </p>
-            <div class="imageContainer">
-              <img
-                src="../images/hero.png"
-                alt="história"
-                class="historyImage"
-              />
-              <p><i>Lorem ipsum dolor sit amet.</i></p>
-            </div>
-          </div>
-          <div class="topic">
-            <h1>A História da Floral Ósseo</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laudantium nam delectus quidem ea explicabo doloribus molestias consequuntur inventore possimus tempora, ducimus aliquid blanditiis odit accusamus aspernatur optio, sequi dolores.
-            Error veritatis vel illum, impedit iste hic quibusdam tempora repellat sapiente, ipsum voluptatibus quaerat? Non velit nam deleniti ad, illo quis voluptatem. Ea officiis dolorem laudantium consectetur reiciendis ullam quasi?</p>
-            <div class="imageContainer">
-              <img
-                src="../images/hero.png"
-                alt="história"
-                class="historyImage"
-              />
-              <p><i>Lorem ipsum dolor sit amet.</i></p>
-            </div>
-          </div>
+      <section class="bandHistorySection">
+        <div class="sectionDiv">
+          <h2>Quando tudo começou</h2>
+          <p>
+            A banda Floral foi formada em 2005 por um grupo de amigos
+            apaixonados por música. Inicialmente, eles começaram tocando covers
+            em pequenos eventos locais, mas rapidamente perceberam que tinham
+            uma química única e decidiram criar suas próprias músicas.
+          </p>
+          <p>
+            O nome "Floral" foi escolhido para refletir a beleza e a diversidade
+            da natureza, algo que eles queriam transmitir através de sua música.
+            Com o tempo, a banda começou a ganhar reconhecimento na cena musical
+            local, participando de festivais e conquistando uma base de fãs
+            leal.
+          </p>
         </div>
+        <img src="../images/hero.png" alt="História da Banda Floral" />
+        <div class="sectionDiv">
+          <h2>Quando tudo começou</h2>
+          <p>
+            A banda Floral foi formada em 2005 por um grupo de amigos
+            apaixonados por música. Inicialmente, eles começaram tocando covers
+            em pequenos eventos locais, mas rapidamente perceberam que tinham
+            uma química única e decidiram criar suas próprias músicas.
+          </p>
+          <p>
+            O nome "Floral" foi escolhido para refletir a beleza e a diversidade
+            da natureza, algo que eles queriam transmitir através de sua música.
+            Com o tempo, a banda começou a ganhar reconhecimento na cena musical
+            local, participando de festivais e conquistando uma base de fãs
+            leal.
+          </p>
+        </div>
+        <img src="../images/hero.png" alt="História da Banda Floral" />
+        <div class="sectionDiv">
+          <h2>Quando tudo começou</h2>
+          <p>
+            A banda Floral foi formada em 2005 por um grupo de amigos
+            apaixonados por música. Inicialmente, eles começaram tocando covers
+            em pequenos eventos locais, mas rapidamente perceberam que tinham
+            uma química única e decidiram criar suas próprias músicas.
+          </p>
+          <p>
+            O nome "Floral" foi escolhido para refletir a beleza e a diversidade
+            da natureza, algo que eles queriam transmitir através de sua música.
+            Com o tempo, a banda começou a ganhar reconhecimento na cena musical
+            local, participando de festivais e conquistando uma base de fãs
+            leal.
+          </p>
+        </div>
+        <img src="../images/hero.png" alt="História da Banda Floral" />
+        <div class="sectionDiv">
+          <h2>Quando tudo começou</h2>
+          <p>
+            A banda Floral foi formada em 2005 por um grupo de amigos
+            apaixonados por música. Inicialmente, eles começaram tocando covers
+            em pequenos eventos locais, mas rapidamente perceberam que tinham
+            uma química única e decidiram criar suas próprias músicas.
+          </p>
+          <p>
+            O nome "Floral" foi escolhido para refletir a beleza e a diversidade
+            da natureza, algo que eles queriam transmitir através de sua música.
+            Com o tempo, a banda começou a ganhar reconhecimento na cena musical
+            local, participando de festivais e conquistando uma base de fãs
+            leal.
+          </p>
+        </div>
+        <img src="../images/hero.png" alt="História da Banda Floral" />
       </section>
     </main>
-    <a href="index.html" class="backButton">Voltar</a>
   </body>
 </html>

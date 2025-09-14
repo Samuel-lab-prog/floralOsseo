@@ -20,40 +20,40 @@ $font-sizes-xsm: (
   "h1": 2.5rem,
 );
 $font-sizes-sm: (
-  "p": 1.3rem,
+  "p": 1.4rem,
   "h6": 1.2rem,
   "h5": 1.4rem,
   "h4": 1.8rem,
   "h3": 2.2rem,
-  "h2": 2.6rem,
-  "h1": 3rem,
+  "h2": 3rem,
+  "h1": 4rem,
 );
 $font-sizes-md: (
-  "p": 1.6rem,
+  "p": 1.7rem,
   "h6": 1.4rem,
   "h5": 1.6rem,
   "h4": 2rem,
   "h3": 2.4rem,
-  "h2": 2.8rem,
-  "h1": 3rem,
+  "h2": 3.7rem,
+  "h1": 5rem,
 );
 $font-sizes-lg: (
-  "p": 1.6rem,
+  "p": 2rem,
   "h6": 1.6rem,
   "h5": 1.8rem,
   "h4": 2.2rem,
   "h3": 2.6rem,
-  "h2": 3rem,
-  "h1": 6rem,
+  "h2": 5rem,
+  "h1": 7rem,
 );
 $font-sizes-xl: (
-  "p": 1.8rem,
+  "p": 2.3rem,
   "h6": 1.8rem,
   "h5": 2rem,
   "h4": 2.4rem,
   "h3": 2.8rem,
-  "h2": 3.2rem,
-  "h1": 7rem,
+  "h2": 6rem,
+  "h1": 9rem,
 );
 $font-sizes: (
   "xsm": $font-sizes-xsm,
@@ -64,24 +64,20 @@ $font-sizes: (
 );
 $body-padding-sizes: (
   "xsm": 1rem,
-  "sm": 2rem,
+  "sm": 1.5rem,
   "md": 3rem,
-  "lg": 4rem,
-  "xl": 6rem,
+  "lg": 3rem,
+  "xl": 4rem,
 );
 
 $colors: (
   "primary": #d20000,
   "secondary": #ffffff,
-  "background": #000000,
   "white": #ffffff,
   "black": #000000,
-  "gray-light": #f1f1f1,
-  "gray-dark": #343a40,
 );
 $font-heading: "Bungee";
 $font-body: "Epunda Slab", serif;
-$font-tertiary: "Roboto", sans-serif;
 
 $transition-fast: 0.2s ease;
 $transition-medium: 0.4s ease;
