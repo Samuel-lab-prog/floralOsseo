@@ -1,0 +1,70 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as var;
+@use "sass:map" as map;
+
+.navbar {
+  @include mixins.flex(row, space-between, center, 3rem);
+  height: var.$navbar-height;
+  width: 100%;
+  padding: 0 map.get(var.$body-padding-sizes, "xsm");
+  position: fixed;
+  top: 0;
+  left: 0;
+  @include mixins.respond-to(md) {
+    justify-content: start;
+  }
+  @include mixins.respond-to(lg) {
+    justify-content: start;
+  }
+  @include mixins.respond-to(xl) {
+    justify-content: start;
+  }
+  &.navScroll {
+    background-color: map.get(var.$colors, "primary");
+    transition: background-color var.$transition-fast;
+    border-bottom: 3px solid map.get(var.$colors, "white");
+  }
+
+  a {
+    height: 100%;
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+  ul {
+    display: none;
+    @include mixins.respond-to(md) {
+      @include mixins.flex(row, space-between, center, auto);
+    }
+    @include mixins.respond-to(lg) {
+      @include mixins.flex(row, space-between, center, auto);
+    }
+    @include mixins.respond-to(xl) {
+      @include mixins.flex(row, space-between, center, auto);
+    }
+
+    li {
+      padding: 0 2rem;
+      a {
+        text-decoration: none;
+        transition: var.$transition-fast;
+        &:hover {
+          color: map.get(var.$colors, "primary");
+        }
+      }
+    }
+  }
+  button {
+    @include mixins.respond-to(md) {
+      display: none;
+    }
+    @include mixins.respond-to(lg) {
+      display: none;
+    }
+    @include mixins.respond-to(xl) {
+      display: none;
+    }
+  }
+}

@@ -1,17 +1,10 @@
-const menuButton = document.querySelector('.menuButton');
-const menuCloseButton = document.querySelector('.menuCloseButton');
-const menuDiv = document.querySelector('.menuDiv');
-const body = document.querySelector('body');
-const main = document.querySelector('main');
 
-menuButton.addEventListener('click', () => {
-  menuDiv.classList.add('open');
-  body.classList.add('blockScroll');
-  main.classList.add('blockEvents');
-});
+const nav = document.querySelector('nav');
 
-menuCloseButton.addEventListener('click', () => {
-    menuDiv.classList.remove('open');
-    body.classList.remove('blockScroll');
-    main.classList.remove('blockEvents');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 150) {
+    nav.classList.add('navScroll');
+  } else {
+    nav.classList.remove('navScroll');
+  }
 });

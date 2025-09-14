@@ -1,0 +1,85 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mixins;
+@use "sass:map";
+@use "sass:color";
+
+body {
+  background-color: map.get(var.$colors, "black");
+  color: map.get(var.$colors, "white");
+  font-family: var.$font-body;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var.$font-heading;
+  font-weight: 700;
+  color: map.get(var.$colors, "primary");
+}
+
+p,
+i,
+span,
+a,
+li,
+label {
+  font-family: var.$font-body;
+  line-height: 1.6;
+}
+ul{
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: var.$transition-fast;
+  color: map.get(var.$colors, "white");
+
+  &:hover {
+    color: map.get(var.$colors, "primary");
+  }
+}
+main {
+  margin-top: var.$navbar-height;
+}
+
+@each $label, $map in var.$font-sizes {
+  @media (min-width: map.get(var.$breakpoints, $label)) {
+    h1 {
+      font-size: map.get($map, "h1");
+    }
+    h2 {
+      font-size: map.get($map, "h2");
+    }
+    h3 {
+      font-size: map.get($map, "h3");
+    }
+    h4 {
+      font-size: map.get($map, "h4");
+    }
+    h5 {
+      font-size: map.get($map, "h5");
+    }
+    h6 {
+      font-size: map.get($map, "h6");
+    }
+    p,
+    i,
+    span,
+    a,
+    li,
+    label {
+      font-size: map.get($map, "p");
+    }
+  }
+}
+@each $breakpoint, $size in var.$breakpoints {
+  @media (min-width: $size) {
+    body {
+      padding: 0 map.get(var.$body-padding-sizes, $breakpoint);
+    }
+  }
+}

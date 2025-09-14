@@ -1,0 +1,38 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as var;
+@use "../components/buttons" as buttons;
+@use "sass:map";
+
+.heroSection {
+  @include mixins.flex(column, center, center, 1rem);
+  h1 {
+    text-align: center;
+  }
+  background-image: image('../../images/hero.png', linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)));
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+.historySection,
+.membersSection,
+.contactSection {
+  @include mixins.flex(column, center, start, 1rem);
+}
+ul {
+  @include mixins.flex(row, start, center, 1rem);
+  list-style: none;
+}
+.hide {
+  display: none;
+}
+.contactImage {
+  width: 50px;
+  transition: var.$transition-fast;
+  &:hover {
+    filter: brightness(0.8);
+    transform: scale(1.1);
+  }
+}
+form {
+  @include mixins.flex(row, start, center, 1rem);
+}

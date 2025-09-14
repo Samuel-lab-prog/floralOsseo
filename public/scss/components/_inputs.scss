@@ -1,0 +1,27 @@
+@use "../abstracts/mixins" as mixin;
+@use "../abstracts/variables" as var;
+@use "../components/buttons" as *;
+@use "sass:map";
+
+input {
+  padding: 0.5rem 1rem;
+  border: 2px solid map.get(var.$colors, "gray-light");
+  border-radius: 5px;
+  font-size: map.get(var.$font-sizes-xsm, "p");
+  transition: var.$transition-fast;
+  background-color: map.get(var.$colors, "primary");
+  color: map.get(var.$colors, "white");
+  @each $label, $size in var.$breakpoints {
+    @include mixin.respond-to($label) {
+      font-size: map.get(var.$font-sizes, $label, "p");
+    }
+  }
+  &:focus {
+    box-shadow: var.$box-shadow;
+  }
+
+  &::placeholder {
+    color: map.get(var.$colors, "gray-light");
+  }
+}
+
