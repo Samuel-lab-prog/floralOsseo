@@ -5,7 +5,12 @@
 
 .heroSection {
   @include mixins.flex(column, center, center, 1rem);
-  background-image: url("../../images/hero.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+    url("../images/hero.png");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - var.$navbar-height);
+
   h1 {
     text-align: center;
   }
@@ -14,15 +19,34 @@
   }
   padding: map.get(var.$body-padding-sizes, "xsm");
 }
-.historySection,
-.membersSection,
-.contactSection {
+section{
   @include mixins.flex(column, center, start, 1rem);
   padding: map.get(var.$body-padding-sizes, "xsm");
   @each $label, $size in var.$breakpoints {
     @include mixins.respond-to($label) {
       padding: map.get(var.$body-padding-sizes, $label);
     }
+  }
+  p {
+    text-align: justify;
+    @include mixins.respond-to(lg) {
+      width: 80%;
+    }
+  }
+}
+
+.membersSection {
+  @include mixins.respond-to(lg) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+      url("../images/membersHome.avif");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+.contactSection {
+  @include mixins.flex(column, center, center, 1rem);
+  p, h2{
+    text-align: center;
   }
 }
 ul {
@@ -54,5 +78,10 @@ ul {
   }
 }
 form {
-  @include mixins.flex(row, start, center, 1rem);
+  @include mixins.flex(row, center, center, 1rem);
+  width: 100%;
+  input[type='email'] {
+    width: 60%;
+  }
+  
 }

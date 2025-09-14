@@ -6,11 +6,9 @@
   @include mixins.flex(row, space-between, center, 3rem);
   height: var.$navbar-height;
   width: 100%;
-  padding: map.get(var.$body-padding-sizes, "xsm");
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
   border-bottom: 2px solid map.get(var.$colors, "white");
   background-color: map.get(var.$colors, "black");
   @include mixins.respond-to(md) {
@@ -32,6 +30,11 @@
     }
   }
   ul.navLinks {
+    a{
+      &:hover {
+        color: map.get(var.$colors, "primary");
+      }
+    }
     max-width: 600px;
     display: none;
     @include mixins.respond-to(md) {

@@ -118,11 +118,9 @@ input:focus {
   gap: 3rem;
   height: 100px;
   width: 100%;
-  padding: 1rem;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
   border-bottom: 2px solid #ffffff;
   background-color: #000000;
 }
@@ -173,6 +171,9 @@ input:focus {
 .navbar ul.navLinks {
   max-width: 600px;
   display: none;
+}
+.navbar ul.navLinks a:hover {
+  color: #d20000;
 }
 @media (min-width: 768px) {
   .navbar ul.navLinks {
@@ -342,7 +343,7 @@ footer {
 }
 @media (min-width: 480px) {
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   h2 {
     font-size: 3rem;
@@ -458,7 +459,10 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-image: url("../../images/hero.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("../images/hero.png");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 100px);
   padding: 1rem;
 }
 .heroSection h1 {
@@ -468,9 +472,7 @@ footer {
   text-align: center;
 }
 
-.historySection,
-.membersSection,
-.contactSection {
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -479,39 +481,56 @@ footer {
   padding: 1rem;
 }
 @media (min-width: 350px) {
-  .historySection,
-  .membersSection,
-  .contactSection {
+  section {
     padding: 1rem;
   }
 }
 @media (min-width: 480px) {
-  .historySection,
-  .membersSection,
-  .contactSection {
+  section {
     padding: 1.5rem;
   }
 }
 @media (min-width: 768px) {
-  .historySection,
-  .membersSection,
-  .contactSection {
+  section {
     padding: 3rem;
   }
 }
 @media (min-width: 1024px) {
-  .historySection,
-  .membersSection,
-  .contactSection {
+  section {
     padding: 3rem;
   }
 }
 @media (min-width: 1200px) {
-  .historySection,
-  .membersSection,
-  .contactSection {
+  section {
     padding: 4rem;
   }
+}
+section p {
+  text-align: justify;
+}
+@media (min-width: 1024px) {
+  section p {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .membersSection {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("../images/membersHome.avif");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.contactSection p, .contactSection h2 {
+  text-align: center;
 }
 
 ul {
@@ -560,9 +579,13 @@ ul {
 form {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
+  width: 100%;
+}
+form input[type=email] {
+  width: 60%;
 }
 
 .title {
