@@ -116,6 +116,7 @@ input:focus {
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
+  z-index: 1000;
   height: 100px;
   width: 100%;
   position: fixed;
@@ -717,10 +718,16 @@ form input[type=email] {
   justify-content: center;
   align-items: center;
   gap: 0;
+}
+.membersTitleSection h1,
+.membersTitleSection p {
   text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .membersCardsSection {
+  justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -729,7 +736,7 @@ form input[type=email] {
   .membersCardsSection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 6rem;
+    gap: 3rem;
   }
 }
 @media (min-width: 350px) {
@@ -758,30 +765,15 @@ form input[type=email] {
   }
 }
 .membersCardsSection .memberCard {
-  height: 300px;
-  background-image: url("../../images/hero.png");
+  background-image: url("../images/hero.png");
   background-size: cover;
   background-position: center;
+  aspect-ratio: 3/4;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
   gap: 1rem;
-}
-@media (min-width: 768px) {
-  .membersCardsSection .memberCard {
-    height: 500px;
-  }
-}
-@media (min-width: 1024px) {
-  .membersCardsSection .memberCard {
-    height: 550px;
-  }
-}
-@media (min-width: 1200px) {
-  .membersCardsSection .memberCard {
-    height: 600px;
-  }
 }
 .membersCardsSection .memberCard .memberName {
   color: #ffffff;
@@ -789,10 +781,13 @@ form input[type=email] {
 }
 .membersCardsSection .memberCard:hover {
   cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0px 20px rgba(255, 255, 255, 0.6);
+  transition: 0.4s ease;
 }
 .membersCardsSection .memberCard:hover .memberName {
   color: #d20000;
-  transition: 0.2s ease;
+  transition: 0.4s ease;
 }
 
 .memberTitleSection {
