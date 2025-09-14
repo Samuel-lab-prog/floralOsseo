@@ -45,6 +45,10 @@ a {
 main {
   margin-top: var.$navbar-height;
 }
+footer {
+  @include mixins.flex(row, center, center, 1rem);
+  height: calc(var.$navbar-height * 2);
+}
 
 @each $label, $map in var.$font-sizes {
   @media (min-width: map.get(var.$breakpoints, $label)) {

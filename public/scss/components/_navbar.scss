@@ -6,23 +6,21 @@
   @include mixins.flex(row, space-between, center, 3rem);
   height: var.$navbar-height;
   width: 100%;
-  padding: 0 map.get(var.$body-padding-sizes, "xsm");
+  padding: map.get(var.$body-padding-sizes, "xsm");
   position: fixed;
   top: 0;
   left: 0;
   @include mixins.respond-to(md) {
     justify-content: start;
   }
-  @include mixins.respond-to(lg) {
-    justify-content: start;
-  }
-  @include mixins.respond-to(xl) {
-    justify-content: start;
+  @each $label, $size in var.$breakpoints {
+    @include mixins.respond-to($label) {
+      padding: 0 map.get(var.$body-padding-sizes, $label);
+    }
   }
   &.navScroll {
-    background-color: map.get(var.$colors, "primary");
+    background-color: map.get(var.$colors, "black");
     transition: background-color var.$transition-fast;
-    border-bottom: 3px solid map.get(var.$colors, "white");
   }
 
   a {
@@ -36,12 +34,6 @@
   ul {
     display: none;
     @include mixins.respond-to(md) {
-      @include mixins.flex(row, space-between, center, auto);
-    }
-    @include mixins.respond-to(lg) {
-      @include mixins.flex(row, space-between, center, auto);
-    }
-    @include mixins.respond-to(xl) {
       @include mixins.flex(row, space-between, center, auto);
     }
 
@@ -58,12 +50,6 @@
   }
   button {
     @include mixins.respond-to(md) {
-      display: none;
-    }
-    @include mixins.respond-to(lg) {
-      display: none;
-    }
-    @include mixins.respond-to(xl) {
       display: none;
     }
   }

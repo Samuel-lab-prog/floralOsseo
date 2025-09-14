@@ -1,0 +1,49 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as var;
+@use "sass:map" as map;
+@use "buttons" as buttons;
+
+.menu {
+  position: fixed;
+  display: none;
+  top: var.$navbar-height;
+  right: 0px;
+  width: 50%;
+  height: calc(100vh - var.$navbar-height);
+  background-color: map.get(var.$colors, "primary");
+  transition: right var.$transition-medium;
+  z-index: 999;
+  padding: map.get($map: var.$body-padding-sizes, $key:"xsm");
+  @include mixins.respond-to(sm) {
+    padding: map.get(var.$body-padding-sizes, "sm");
+  }
+    .menuHeader {
+    @include mixins.flex(row, space-between, center, 1rem);
+    width: fit-content;
+    margin-bottom: 2rem;
+    h3 {
+      color: map.get(var.$colors, "white");
+        }
+    }
+  &.open {
+    @include mixins.flex(column, start, start, 0.5rem);
+  }
+  ul {
+    @include mixins.flex(column, center, start, 1rem);
+    list-style: none;
+    li {
+      a {
+        font-size: 2rem;
+        color: map.get(var.$colors, "white");
+        transition: var.$transition-fast;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .menuHeader {
+    @include mixins.flex(row, space-between, center, 2rem);
+    width: 100%;
+  }
+}
