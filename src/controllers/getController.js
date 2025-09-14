@@ -5,7 +5,7 @@ const path = require("path");
 function staticController(req, res) {
   let url = req.url;
   if (url === "/") {
-    const filePath = path.join(__dirname, "../", "../", "public", "html", "index.html");
+    const filePath = path.join(__dirname, "../", "../", "public", "html", "home.html");
     fs.readFile(filePath, (err, data) => {
       if (err) {
         console.log(err);
