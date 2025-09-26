@@ -9,11 +9,20 @@ if (process.env.NODE_ENV !== "production") {
   });
 }
 
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false,
-  },
+const pool = new Pool(
+  process.env.NODE_ENV === "production" ? {
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false,
+    },
+    quiet: true
+  } : { 
+  host: process.env.HOST,
+  port: process.env.PORT,
+  database: process.env.DATABASE,
+  user: process.env.USER,
+  password: process.env.PASSWORD,
+  quiet: true
 });
 
 module.exports = pool;
