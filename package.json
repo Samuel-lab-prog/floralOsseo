@@ -1,0 +1,16 @@
+{
+  "name": "floral2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sass": "sass --watch src/styles/main.scss:src/styles/main.css --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2",
+    "vite": "^7.1.12"
+  }
+}

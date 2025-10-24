@@ -1,0 +1,82 @@
+@import "https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bungee&family=Comic+Relief:wght@400;700&family=Corinthia:wght@400;700&family=Londrina+Outline&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Bungee&family=Comic+Relief:wght@400;700&family=Corinthia:wght@400;700&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Londrina+Outline&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap";
+
+$breakpoints: (
+  "xsm": 350px,
+  "sm": 480px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1200px,
+);
+$font-sizes-xsm: (
+  "p": 1rem,
+  "h6": 1.2rem,
+  "h5": 1.5rem,
+  "h4": 1.8rem,
+  "h3": 2rem,
+  "h2": 2.2rem,
+  "h1": 2.5rem,
+);
+$font-sizes-sm: (
+  "p": 1.4rem,
+  "h6": 1.2rem,
+  "h5": 1.4rem,
+  "h4": 1.8rem,
+  "h3": 2.2rem,
+  "h2": 3rem,
+  "h1": 5rem,
+);
+$font-sizes-md: (
+  "p": 1.7rem,
+  "h6": 1.4rem,
+  "h5": 1.6rem,
+  "h4": 2rem,
+  "h3": 2.4rem,
+  "h2": 3.7rem,
+  "h1": 5rem,
+);
+$font-sizes-lg: (
+  "p": 2rem,
+  "h6": 1.6rem,
+  "h5": 1.8rem,
+  "h4": 2.2rem,
+  "h3": 2.6rem,
+  "h2": 5rem,
+  "h1": 7rem,
+);
+$font-sizes-xl: (
+  "p": 2.3rem,
+  "h6": 1.8rem,
+  "h5": 2rem,
+  "h4": 2.4rem,
+  "h3": 4rem,
+  "h2": 6rem,
+  "h1": 9rem,
+);
+$font-sizes: (
+  "xsm": $font-sizes-xsm,
+  "sm": $font-sizes-sm,
+  "md": $font-sizes-md,
+  "lg": $font-sizes-lg,
+  "xl": $font-sizes-xl,
+);
+$body-padding-sizes: (
+  "xsm": 1rem,
+  "sm": 1.5rem,
+  "md": 3rem,
+  "lg": 3rem,
+  "xl": 4rem,
+);
+$colors: (
+  "primary": #d20000,
+  "secondary": #fff,
+  "white": #fff,
+  "black": #000,
+);
+$font-heading: "Bungee";
+$font-body: "Epunda Slab", serif;
+$transition-fast: 0.2s ease;
+$transition-medium: 0.4s ease;
+$transition-slow: 0.6s ease;
+$box-shadow: 0 0px 20px rgb(255 255 255 / 60%);
+$navbar-height: 100px;

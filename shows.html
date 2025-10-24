@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shows - Floral Ósseo</title>
+    <!-- CSS compilado do SCSS -->
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <!-- Script JS -->
+    <script src="/src/js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="navLogo">
+          <img src="/src/public/logo.svg" alt="logo" />
+        </a>
+        <ul class="navLinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="history.html">História</a></li>
+          <li><a href="members.html">Membros</a></li>
+        </ul>
+        <button class="button container menuButton" id="openMenu">
+          <img src="/src/public/menu.svg" alt="Menu" />
+        </button>
+      </nav>
+
+      <!-- Menu mobile -->
+      <menu class="menu">
+        <ul class="menuHeader">
+          <li><h3>Menu</h3></li>
+          <li>
+            <button class="button container" id="closeMenu">
+              <img src="/src/public/close.svg" alt="Close Menu" />
+            </button>
+          </li>
+        </ul>
+        <ul class="menuLinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="history.html">História</a></li>
+          <li><a href="members.html">Membros</a></li>
+        </ul>
+      </menu>
+    </header>
+
+    <main>
+      <h1 class="titleShow">Shows</h1>
+
+      <section class="showsSection">
+        <div class="showCard">
+          <div class="showHeader">
+            <h3 class="city">Tramandaí</h3>
+            <h3 class="date">29/10</h3>
+          </div>
+          <div class="showDetails">
+            <p class="location">Salão de eventos municipal</p>
+            <p class="time">18:00-22:00</p>
+          </div>
+          <div class="showAvailability">
+            <p><strong>Ingressos disponíveis</strong></p>
+            <a class="button primary" href="#">Comprar</a>
+          </div>
+        </div>
+
+        <div class="showCard">
+          <div class="showHeader">
+            <h3 class="city">Balneário Pinal</h3>
+            <h3 class="date">04/11</h3>
+          </div>
+          <div class="showDetails">
+            <p class="location">Pavilhão de Eventos</p>
+            <p class="time">21:00-23:00</p>
+          </div>
+          <div class="showAvailability">
+            <p><strong>Ingressos disponíveis</strong></p>
+            <a class="button primary" href="#">Comprar</a>
+          </div>
+        </div>
+
+        <div class="showCard">
+          <div class="showHeader">
+            <h3 class="city">Santo Antônio da Patrulha</h3>
+            <h3 class="date">09/11</h3>
+          </div>
+          <div class="showDetails">
+            <p class="location">Salão de atos da cidade alta</p>
+            <p class="time">18:00-20:00</p>
+          </div>
+          <div class="showAvailability">
+            <p><strong>Ingressos disponíveis</strong></p>
+            <a class="button primary" href="#">Comprar</a>
+          </div>
+        </div>
+
+        <div class="showCard">
+          <div class="showHeader">
+            <h3 class="city">Capivari do Sul</h3>
+            <h3 class="date">22/11</h3>
+          </div>
+          <div class="showDetails">
+            <p class="location">Prefeitura de Capivari do Sul</p>
+            <p class="time">21:00-23:00</p>
+          </div>
+          <div class="showAvailability">
+            <p><strong>Ingressos disponíveis</strong></p>
+            <a class="button primary" href="#">Comprar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
