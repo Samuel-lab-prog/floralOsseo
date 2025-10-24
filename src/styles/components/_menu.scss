@@ -17,6 +17,7 @@
   z-index: 999;
   padding: map.get($map: var.$body-padding-sizes, $key: "xsm");
   transition: 0.3s ease;
+  border-left: solid white;
 
   @include mixins.respond-to(sm) {
     padding: map.get(var.$body-padding-sizes, "sm");

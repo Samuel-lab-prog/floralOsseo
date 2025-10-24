@@ -9,49 +9,49 @@ $breakpoints: (
   "xl": 1200px,
 );
 $font-sizes-xsm: (
-  "p": 1rem,
+  "p": 1.2rem,
   "h6": 1.2rem,
   "h5": 1.5rem,
   "h4": 1.8rem,
   "h3": 2rem,
   "h2": 2.2rem,
-  "h1": 2.5rem,
+  "h1": 2rem,
 );
 $font-sizes-sm: (
-  "p": 1.4rem,
+  "p": 1.2rem,
   "h6": 1.2rem,
   "h5": 1.4rem,
   "h4": 1.8rem,
   "h3": 2.2rem,
-  "h2": 3rem,
-  "h1": 5rem,
+  "h2": 2.5rem,
+  "h1": 3.5rem,
 );
 $font-sizes-md: (
-  "p": 1.7rem,
+  "p": 1.5rem,
   "h6": 1.4rem,
   "h5": 1.6rem,
   "h4": 2rem,
   "h3": 2.4rem,
-  "h2": 3.7rem,
-  "h1": 5rem,
+  "h2": 4rem,
+  "h1": 6rem,
 );
 $font-sizes-lg: (
-  "p": 2rem,
+  "p": 1.5rem,
   "h6": 1.6rem,
   "h5": 1.8rem,
   "h4": 2.2rem,
   "h3": 2.6rem,
-  "h2": 5rem,
-  "h1": 7rem,
+  "h2": 4rem,
+  "h1": 6rem,
 );
 $font-sizes-xl: (
-  "p": 2.3rem,
+  "p": 1.5rem,
   "h6": 1.8rem,
   "h5": 2rem,
   "h4": 2.4rem,
   "h3": 4rem,
-  "h2": 6rem,
-  "h1": 9rem,
+  "h2": 4rem,
+  "h1": 6rem,
 );
 $font-sizes: (
   "xsm": $font-sizes-xsm,
@@ -65,7 +65,7 @@ $body-padding-sizes: (
   "sm": 1.5rem,
   "md": 3rem,
   "lg": 3rem,
-  "xl": 4rem,
+  "xl": 3rem,
 );
 $colors: (
   "primary": #d20000,
@@ -79,4 +79,4 @@ $transition-fast: 0.2s ease;
 $transition-medium: 0.4s ease;
 $transition-slow: 0.6s ease;
 $box-shadow: 0 0px 20px rgb(255 255 255 / 60%);
-$navbar-height: 100px;
+$navbar-height: 130px;

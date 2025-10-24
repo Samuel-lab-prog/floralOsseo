@@ -25,7 +25,7 @@
   }
 
   .navLogo {
-    height: var.$navbar-height;
+    height: var.$navbar-height / 1.4;
     width: fit-content;
 
     @include mixins.flex(row, center, center, 1rem);
@@ -43,11 +43,11 @@
       }
     }
 
-    max-width: 600px;
+    max-width: 400px;
     display: none;
 
     @include mixins.respond-to(md) {
-      @include mixins.flex(row, space-between, center, 3rem);
+      @include mixins.flex(row, space-between, center, auto);
     }
   }
 
