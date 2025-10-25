@@ -1,0 +1,77 @@
+@use "../abstracts/mixins" as mixin;
+@use "../abstracts/variables" as var;
+@use "sass:map";
+@use "sass:color";
+
+.button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: map.get(var.$font-sizes-xsm, "p");
+  cursor: pointer;
+  color: map.get(var.$colors, "white");
+  transition: var.$transition-fast;
+  background-color: transparent;
+
+  @each $label, $size in var.$breakpoints {
+    @include mixin.respond-to($label) {
+      font-size: map.get(var.$font-sizes, $label, "p");
+
+      @if $label == "sm" {
+        padding: 0.8rem 1.5rem;
+      }
+
+      @if $label == "md" {
+        padding: 1rem 2rem;
+      }
+
+      @if $label == "lg" {
+        padding: 1.2rem 2.5rem;
+      }
+
+      @if $label == "xl" {
+        padding: 1.5rem 3rem;
+      }
+    }
+  }
+
+  &.container {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  &.primary {
+    @extend .button;
+
+    border: solid 2px map.get(var.$colors, "white");
+
+    &:hover {
+      box-shadow: var.$box-shadow;
+    }
+
+    &:active {
+      box-shadow: none;
+      transform: scale(0.98);
+    }
+  }
+
+  &.secondary {
+    background-color: map.get(var.$colors, "primary");
+
+    &:hover {
+      box-shadow: var.$box-shadow;
+    }
+
+    &:active {
+      box-shadow: none;
+      transform: scale(0.98);
+    }
+  }
+
+  &.disabled {
+    background-color: map.get(var.$colors, "gray-light");
+    color: map.get(var.$colors, "gray-dark");
+    cursor: not-allowed;
+  }
+}

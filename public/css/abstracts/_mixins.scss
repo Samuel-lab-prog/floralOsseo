@@ -1,0 +1,30 @@
+@use 'variables.scss' as var;
+@use 'sass:map';
+
+@mixin flex($direction, $justify, $align, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin grid($columns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+    
+}
+
+@mixin respond-to($breakpoint) {
+    $size: map.get(var.$breakpoints, $breakpoint);
+
+    @if $size {
+        @media (min-width: $size) {
+            @content;
+        }
+    } @else {
+        @warn "No value found for breakpoint: #{$breakpoint}";
+    }
+}
+
